@@ -18,38 +18,7 @@
         }
         .header_top{
             height: 40px;
-            /*border: 1px solid black;*/
-            display: flex;
-            align-items: center;
             background-color: #0080ff;
-        }
-        .headertop_box1{
-            width: 60%;
-            /*border: 1px solid black;*/
-        }
-        .headertop_box1 ul, .hedaertop_box2 ul{
-            display: flex;
-            list-style: none;
-            margin: 0px;
-        }
-        .headertop_box1 li, .headertop_box2 li{
-            display:inline;
-            margin: 5px;
-        }
-        .headertop_box1 a{
-            font-size: 14px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white; 
-        }
-        .headertop_box2{
-            width: 40%;
-            /*border: 1px solid black;*/
-        }
-        .headertop_box2 a{
-            font-size: 11px;
-            text-decoration: none;
-            color: white; 
         }
         .header_middle{
             width: 65%;
@@ -97,28 +66,24 @@
         }
         .top_box1{
             width: 60%;
-            /*border: 1px solid black;*/
+            border: 1px solid black;
             display: flex;
             align-items: center;
             justify-content: left;
-        }
-        .top_box1 a{
-            font-size: 12px;
-            text-decoration: none;
-            color: #666; 
         }
         .top_box1 ul{
             display: flex;
             list-style: none;
             margin: 0px;
         }
-        .top_box1 li{
-            display:inline;
-            margin: 5px;
+        .top_box1 a{
+            font-size: 12px;
+            text-decoration: none;
+            color: #666; 
         }
         .top_box2{
             width: 40%;
-            /*border: 1px solid black; */
+            border: 1px solid black;
         }
         /*로고,정보,전화번호*/
         .footer_middle{
@@ -232,32 +197,7 @@
 <body>
     <!-- header 영역 -->
     <header>
-        <div class="header_top">
-            <div class="headertop_box1">
-                <ul>
-                    <li><a href="">국내도서</a></li>
-                    <li><a href="">외국도서</a></li>
-                    <li><a href="">중고샵</a></li>
-                    <li><a href="">eBook</a></li>
-                    <li><a href="">크레마클럽</a></li>
-                    <li><a href="">CD/LP</a></li>
-                    <li><a href="">DVD/BD</a></li>
-                    <li><a href="">문구/GIFT</a></li>
-                    <li><a href="">티켓</a></li>
-                </ul>
-            </div>
-            <div class="headertop_box2">
-                <ul>
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                    <li><a href="">마이페이지</a></li>
-                    <li><a href="">카트</a></li>
-                    <li><a href="">주문/배송</a></li>
-                    <li><a href="">고객센터</a></li>
-                    <li><a href="">Global Yes24</a></li>
-                </ul>
-            </div>
-        </div>
+        <div class="header_top"></div>
         <div class="header_middle"></div>
         <div class="header_bottom"></div>
     </header>
@@ -285,6 +225,7 @@
                     <li><a href="">매장안내</a></li>
                 </ul>
             </div>
+            <div class="top_box2"></div>
         </div>
         <hr>
         
@@ -331,7 +272,7 @@
 
         <!--수상내역-->
         <div class="footer_bottom">
-            <img src="/페이지만들기/img_awards.gif">
+            <img src="/day6/img_awards.gif">
             <p>
                 소비자피해보상보험 
                 <span style="color:#999">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</span>
