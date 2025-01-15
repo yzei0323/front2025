@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        *{
+            font-family: "Nanum Gothic", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .footer{
+            background-color: #dfdfdf;
+            padding: 20px;
+            padding-top: 0px; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .footer_menu{
+            width: 100%;
+            /*border: 1px solid red;*/
+            border-top: 1px solid #c2c2c2;
+            border-bottom: 1px solid #c2c2c2;
+
+            div{
+                width: 50%;
+                /*border:1px solid blue;*/
+                margin: 0 275px;
+            }
+            a{
+                color:#888;
+            }
+        }
+
+        li{
+            display:inline;
+            margin: 5px;
+        }
+
+        .footer_img{
+            width: 300px;
+            height:180px;
+            /*border: 1px solid red;*/
+          
+        }
+        .footer_info{
+            width: 680px;
+            height: 180px;
+            /*border: 1px solid red;*/
+        }
+        .footer_info a{
+            margin-left: 8px;
+            display: inline-block;
+        }
+        .title{
+            color:#666;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .footer_qna{
+            width: 320px;
+            div{
+                display: flex;
+            }
+           /*border: 1px solid red;*/
+        }
+        .footer_img2{
+            width: 1300px;
+            height: 80px;
+            padding: 10px;   
+            background-image: url(https://image.yes24.com/sysimage/renew/footer/img_awards.gif?v231001);
+            background-size: cover;
+            background-position: center;
+           /* border: 1px solid red;*/
+        
+        }
+
+        .number p{
+            margin-top:0px;
+        }
+        .box2{
+            margin-left: 20px;
+        }
+
+        label{
+            display: inline-block;
+            width: 60px;
+        }
+
+        button{
+            width: 100px;
+            padding:3px;
+            border: 1px solid rgb(235, 235, 235);
+            background-color: white;
+            margin-top: 5px;
+            margin-right: 3px;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .footer_item{
+            width: 1300px;
+            /*border: 1px solid red;*/
+            font-size:13px;
+        }  
+        a{
+            font-size: 12px;
+            text-decoration-line: none;
+            color:#666;
+        }
+        p{
+             color:#888;
+            }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="footer">
+        <div class="footer_menu">
+            <div>
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href=""><span style="color:#222; font-weight:500;">개인정보처리방침</span></a></li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li><a href="">도서홍보안내</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">제휴안내</a></li>
+                    <li><a href="">복지제휴</a></li>
+                    <li><a href="">매장안내</a></li>
+
+                </ul>
+            </div>
+        </div>
+        
+
+        <!--이미지영역-->
+        <div class="footer_img">
+            <img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt="로고이미지">
+        </div>
+
+        <!--예사정보영역-->
+        <div class="footer_info">
+            <p class="title">예스이십사(주)</p>
+            <p>
+                대표 : 김석환, 최세라<br>
+                주소 : 서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)<br>
+                사업자등록번호 : 229-81-37000   통신판매업신고 : 제 2005-02682호 <a href="https://www.ftc.go.kr/bizCommPopView.do">사업자 정보확인><a></a><br>
+                이메일 : yes24help@yes24.com   호스팅 서비스사업자 : 예스이십사(주)<br>
+            </p>
+            <p>Copyright ⓒ YES24 Corp. All Rights Reserved.</p>
+            
+        </div>
+
+        <!--문의영역-->
+        <div class="footer_qna">
+            <p class="title">고객문의</p>
+            <div class="number">
+                <div class="box1">
+                    <p>
+                    <label>도서/음반</label>
+                    <span style="font-weight:bold">1544-3800</span><br>
+                    <label>티켓예매</label>
+                    <span style="font-weight:bold">1544-6399</span>
+                    </p>
+                </div>
+                <div class="box2">
+                    <p>
+                    <label>중고샵</label>
+                    <span style="font-weight:bold">1566-4295</span><br>
+                    <a href="">eBook 1:1 문의 ></a>
+                    </p>
+                </div>
+            </div>
+            <a href="http://www.naver.com" target="_blank"><button>1:1 문의하기 ></button></a>
+            <a href="" target="_blank"><button>자주 묻는 질문 ></button></a>
+            <a href="" target="_blank"><button>상담시간 안내 ></button></a>
+        </div>
+        <div class="footer_img2">
+        </div>
+        <div class="footer_item">
+            <p>
+                소비자피해보상보험 
+                <span style="color:#999">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</span>
+                <a href="https://mall.sgic.co.kr/csh/iutf/sh/shop/CSHINFO004VM0.mvc?tm=3&q_sk=2&q_sv=2298137000">서비스가입사실 확인></a>
+            
+            </p>
+        </div>
+    </div>
+        
+
+</body>
+</html>

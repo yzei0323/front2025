@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        *{
+            font-family: "Nanum Gothic", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* header 스타일 */
+        header{
+            border: 1px solid black;
+        }
+        .header_top{
+            height: 40px;
+            background-color: #0080ff;
+        }
+        .header_middle{
+            width: 65%;
+            height: 110px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        .header_bottom{
+            height: 50px;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 2px solid #0080ff;
+        }
+        
+        /* section 스타일 */
+        section{
+            /*height: 1000px;*/
+            background-color: #f8f8f8;
+            /*border: 1px solid black;*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .section_box{
+            width: 65%;
+            height: 600px;
+            border: 1px solid #d8d8d8;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        /* footer 스타일 */
+        footer{
+            background-color: #dfdfdf;
+            border-top: 1px solid #cbcbcb;
+        }
+        footer hr{
+            margin: 0px;
+            border: 1px solid #cbcbcb;
+        }
+        /*메뉴*/
+        .footer_top{
+            width: 65%;
+            height: 40px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .top_box1{
+            width: 60%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        .top_box1 ul{
+            display: flex;
+            list-style: none;
+            margin: 0px;
+        }
+        .top_box1 a{
+            font-size: 12px;
+            text-decoration: none;
+            color: #666; 
+        }
+        .top_box2{
+            width: 40%;
+            border: 1px solid black;
+        }
+        /*로고,정보,전화번호*/
+        .footer_middle{
+            width: 65%;
+            /*border: 1px solid black;*/
+            margin: 0 auto;
+            display: flex;
+        }
+        .middle_box1{
+            width: 13%;
+            height: 145px;
+            /*border: 1px solid black;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .middle_box2{
+            width: 62%;
+            height: 145px;
+            /*border: 1px solid black;*/
+            color: #999999;
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        .middle_box2 p{
+            line-height: 18px;
+        }
+        .middle_box2 a{
+            text-decoration: none;
+            color: #666;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .middle_box3{
+            width: 25%;
+            height: 145px;
+            /*border: 1px solid black;*/
+        }
+        .middle_box3 div{
+            display: flex;
+        }
+        .middle_box3 a{
+            font-size: 12px;
+            text-decoration-line: none;
+            color:#333;
+        }
+        .box_title{
+            color:#999;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .number p{
+            font-size: 12px;
+        }
+        .number_box1{
+            line-height: 18px;
+        }
+        .number_box2{
+            line-height: 18px;
+            margin-left: 20px;
+        }
+        .number label{
+            display: inline-block;
+            width: 60px;
+            color: #666;
+        }
+        .number span{
+            font-weight: 900;
+            color: #222;
+        }
+        .number_btn{
+            display: flex;
+            justify-content: space-between
+        }
+        .middle_box3 button{
+            width: 95px;
+            padding: 3px 0;
+            background-color: #f8f8f8;
+            border: 0.1px solid #cfcfcf;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #666;
+            display: inline-block;
+            cursor: pointer;
+        }
+        /*수상내역이미지*/
+        .footer_bottom{
+            width: 65%;
+            height: 135px;
+            /*border: 1px solid black;*/
+            margin: 0 auto;
+        }
+        .footer_bottom img{
+            width: 100%;
+            object-fit: contain;
+        }
+        .footer_bottom p{
+            font-size: 12px;
+            color: #333
+        }
+        .footer_bottom a{
+            text-decoration: none;
+            color: #666;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header 영역 -->
+    <header>
+        <div class="header_top"></div>
+        <div class="header_middle"></div>
+        <div class="header_bottom"></div>
+    </header>
+
+    <!-- section 영역 -->
+    <section>
+        <div class="section_box"></div>
+    </section>
+    
+    <!-- footer 영역 -->
+    <footer>
+        <!--메뉴-->
+        <div class="footer_top">
+            <div class="top_box1">
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href=""><span style="color:#222; font-weight:500;">개인정보처리방침</span></a></li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li><a href="">도서홍보안내</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">제휴안내</a></li>
+                    <li><a href="">복지제휴</a></li>
+                    <li><a href="">매장안내</a></li>
+                </ul>
+            </div>
+            <div class="top_box2"></div>
+        </div>
+        <hr>
+        
+        <!--정보-->
+        <div class="footer_middle">
+            <div class="middle_box1">
+                <img src="/페이지만들기/footer_box1.png">
+            </div>
+            <div class="middle_box2">
+                <p class="box_title">예스이십사(주)</p>
+            <p>
+                대표 : 김석환, 최세라<br>
+                주소 : 서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)<br>
+                사업자등록번호 : 229-81-37000   통신판매업신고 : 제 2005-02682호 <a href="https://www.ftc.go.kr/bizCommPopView.do">사업자 정보확인><a></a><br>
+                이메일 : yes24help@yes24.com   호스팅 서비스사업자 : 예스이십사(주)<br>
+                Copyright ⓒ YES24 Corp. All Rights Reserved.</p>
+            </div>
+            <div class="middle_box3">
+                <p class="box_title">고객문의</p>
+                <div class="number">
+                    <div class="number_box1">
+                        <p>
+                        <label>도서/음반</label>
+                        <span>1544-3800</span><br>
+                        <label>티켓예매</label>
+                        <span>1544-6399</span>
+                        </p>
+                    </div>
+                    <div class="number_box2">
+                        <p>
+                        <label>중고샵</label>
+                        <span>1566-4295</span><br>
+                        <a href="">eBook 1:1 문의 ></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="number_btn">
+                <a href="http://www.naver.com" target="_blank"><button>1:1 문의하기 ></button></a>
+                <a href="" target="_blank"><button>자주 묻는 질문 ></button></a>
+                <a href="" target="_blank"><button>상담시간 안내 ></button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--수상내역-->
+        <div class="footer_bottom">
+            <img src="/day6/img_awards.gif">
+            <p>
+                소비자피해보상보험 
+                <span style="color:#999">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</span>
+                <a href="https://mall.sgic.co.kr/csh/iutf/sh/shop/CSHINFO004VM0.mvc?tm=3&q_sk=2&q_sv=2298137000">서비스가입사실 확인></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

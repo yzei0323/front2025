@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li:nth-child(odd){
+            background-color: blue;
+        }
+
+        li:nth-child(even){
+            background-color: pink;
+        }
+
+        /* 
+            주의사항이 있어요 부모(ul)의 n번째 자식에 적용하는거라서
+            저 뭐냐 아이템1은 자식1 문단1이 자식2 아이템2가 자식3
+            일케됨 예아
+            nth-of-type(n)으로 타입을 정해주면 됩니다
+        */
+
+
+    </style>
+</head>
+<body>
+
+    
+    
+    <ul>
+        <li>아이템 1</li>
+        <p>문단 1</p>
+        <li>아이템 2</li> 
+        <p>문단 2</p>
+        <li>아이템 3</li>
+    </ul>
+
+
+    
+    <h2>li </h2>
+        
+    <ul>
+        <li>아이템 1</li>       
+        <li>아이템 2</li>       
+        <li>아이템 3</li>
+    </ul>
+    
+</body>
+</html>

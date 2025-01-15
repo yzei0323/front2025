@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        *{
+            font-family: "Nanum Gothic", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .footer{
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            font-size: 14px;
+        }
+
+        .footer_img{
+            width: 20%;
+            height:180px;
+            /*border: 1px solid red;*/
+            text-align: center;
+        }
+
+        .footer_info{
+            width: 50%;
+            height: 180px;
+           /* border: 1px solid red;*/
+        }
+        .footer_info a{
+            margin-left: 8px;
+            display: inline-block;
+        }
+        .title{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .tb{
+            display: flex;
+        }
+        .tb2{
+            margin-left: 5px;
+        }
+        table{
+            /*border: 1px solid black;*/
+            border-collapse: collapse;
+        }
+        td{
+            width: 80px;
+            border: 1px solid black;
+        }
+        .number{
+            font-weight: bold;
+        }
+        .footer_qna{
+            width: 30%;
+           /* border: 1px solid red;*/
+        }
+
+
+        button{
+            border: 1px solid rgb(194, 194, 194);
+            padding: 5px;
+            margin-top: 5px;
+            margin-right: 3px;
+            display: inline-block;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="footer">
+
+        <!--이미지영역-->
+        <div class="footer_img">
+            <img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt="로고이미지">
+        </div>
+
+        <!--예사정보영역-->
+        <div class="footer_info">
+            <p class="title">예스이십사(주)</p>
+            <p>
+                대표 : 김석환, 최세라<br>
+                주소 : 서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)<br>
+                사업자등록번호 : 229-81-37000   통신판매업신고 : 제 2005-02682호 <a href="">사업자 정보확인><a></a><br>
+                이메일 : yes24help@yes24.com   호스팅 서비스사업자 : 예스이십사(주)<br>
+            </p>
+            Copyright ⓒ YES24 Corp. All Rights Reserved.
+        </div>
+
+        <!--문의영역-->
+        <div class="footer_qna">
+            <p class="title">고객문의</p>
+            <div class="tb">
+                <table class="tb1">
+                    <tr>
+                        <td>도서/음반</td>
+                        <td class="number">1544-3800</td>
+                    </tr>
+                    <tr>
+                        <td>티켓예매</td>
+                        <td class="number">1544-6399</td>
+                    </tr>
+                </table>
+                <table class="tb2">
+                    <tr>
+                        <td>중고샵</td>
+                        <td class="number">1566-4295</td>
+                    </tr>
+                    <tr> 
+                        <td colspan="2"><a href="">eBook 1:1 문의 ></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btn">
+                <a href="http://www.naver.com" target="_blank"><button>1:1 문의하기 ></button></a>
+                <a href="" target="_blank"><button>자주 묻는 질문 ></button></a>
+                <a href="" target="_blank"><button>상담시간 안내 ></button></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
