@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>8. 점수에 따른 등급</h2>
+    <p>사용자가 입력한 점수에 따라 다음 등급을 출력하세요.</p>
+
+    <script>
+        let 점수=prompt("점수를 입력하세요.");
+
+        점수=parseInt(점수);
+
+
+        if(점수>=90){
+            alert("A")
+        }else if(점수>=80){
+            alert("B")
+        }else if(점수>=70){
+            alert("C")
+        }else if(점수>=60){
+            alert("D")
+        }else if(점수<60){
+            alert("F")
+        }else{
+            alert("잘못된 점수입니다.")
+        }
+
+
+    </script>
+
+</body>
+</html>

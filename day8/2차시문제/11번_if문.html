@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>11. 사칙연산 계산기 (if, switch문)</h2>
+    <p> 사용자가 입력한 두 숫자와 연산자(+, -, *, /)를 사용하여 결과를 출력하세요.</p>
+
+    <script>
+
+        let num1=prompt("첫 번째 숫자를 입력하세요.");
+        let num2=prompt("두 번째 숫자를 입력하세요.");
+
+        num1=parseInt(num1);
+        num2=parseInt(num2);
+
+
+        let 연산자=prompt("연산자 [ +, -, *, / ]중 하나를 입력하세요.");
+
+        if(연산자=="+"){
+            alert(num1+num2)
+        }else if(연산자=="-"){
+            alert(num1-num2)
+        }else if(연산자=="*"){
+            alert(num1*num2)
+        }else if(연산자=="/"){
+            alert(num1/num2)
+        }else{
+            alert("연산자를 잘못 입력하셨습니다.")
+        }
+
+    </script>
+
+</body>
+</html>

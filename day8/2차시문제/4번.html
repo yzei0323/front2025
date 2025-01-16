@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>4. 최대값 구하기</h2>
+    <p> 사용자가 입력한 세 개의 숫자 중 가장 큰 숫자를 출력하세요. </p>
+
+    <script>
+
+        let a=prompt("첫 번째 숫자를 입력하세요.");
+        let b=prompt("두 번째 숫자를 입력하세요.");
+        let c=prompt("세 번째 숫자를 입력하세요.");
+
+        a=parseInt(a);
+        console.log("a값",a)
+        
+        b=parseInt(b);
+        console.log("b값",b)
+
+        c=parseInt(c);
+        console.log("c값",c)
+
+
+
+        max= (a>b)?a:b;
+        //console.log(max);
+
+        max= (a>c)?a:c;
+        //console.log(max);
+
+        if(a!==max){
+            max= (b>c)?b:c;
+            alert("가장 큰 숫자는 " +max);
+        }else{
+            alert("가장 큰 숫자는 " +max);
+        }
+        console.log("max", max);
+
+
+
+    </script>
+
+</body>
+</html>
