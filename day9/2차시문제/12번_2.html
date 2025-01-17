@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>12. 홀수만 출력</h2>
+    <p> 사용자가 입력한 숫자 N까지의 숫자 중 홀수만 출력하세요.</p>
+
+    <script>
+
+        let num1=parseInt(prompt("숫자를 입력하세요."));
+
+        let arr=[];
+        for(i=1; i<=num1; i++){
+            if(i % 2 === 1){
+                console.log(i);
+                arr.push(i);
+            }
+        }
+        console.log(arr);
+        // alert(arr[0]);
+        // alert(arr[1]);
+        // alert(arr[2]);
+        
+        for(let i=0; i<arr.length; i++){
+            alert(arr[i]);
+        }
+
+    </script>
+
+</body>
+</html>

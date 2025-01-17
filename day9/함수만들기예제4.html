@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="" id="food">
+    <script>
+
+        /*
+        
+        기능 : 스파게티만들기
+        입력 : 없음
+        반환 : 음식이미지
+        
+        */
+
+        function 스파게티만들기(){
+            //스파게티 레시피를 출력하는 코드 작성
+            alert("1. 면을 삶는다");
+            alert("2. 어쩌구");
+            alert("3. 뭐를한다");
+            alert("4. 치즈 뿌리기");
+
+            let 이미지="https://www.tefal.co.kr/medias/?context=bWFzdGVyfHJvb3R8MjUyMTF8aW1hZ2UvanBlZ3xhR1ptTDJoaFpTOHhOREEzTURJMU5EVTJOelExTkM1cWNHY3w0NmQ1Yjg3OTY0YzhlNDBlMjBiNzU5ZTE2N2RkNzBlZGRjMmRhYWJiMGQyOGIxMDEwZmM5MjFhNmM5OTYxNmE5";
+            return 이미지;
+
+        }
+
+        let result = 스파게티만들기();
+        let foodTag = document.getElementById("food");
+        foodTag.src=result;
+
+
+    </script>
+
+</body>
+</html>

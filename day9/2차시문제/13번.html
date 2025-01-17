@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>13. "stop" 입력될 때까지 입력한 입력을 출력하기</h2>
+
+    <script>
+
+        let input=prompt("입력한 내용이 출력됩니다.")
+        
+        while(input !== "stop"){
+            alert(input)
+            input=prompt("종료하려면 ' stop '을 입력하세요.")
+            if(input==null)break;
+        }
+
+    
+
+    </script>
+</body>
+</html>

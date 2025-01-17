@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>2. 짝수, 홀수 판별</h2>
+    <p> 사용자가 입력한 숫자가 짝수인지 홀수인지 판별하는 프로그램을 작성하세요.</p>
+    
+    <script>
+        // parseInt("123ㅇㄴㅇ") =>123
+        // Number("123ㄴㅇㄴㅇ)" =>NaN
+        // isNaN()
+        
+
+        //홀짝 판별 반복 , 취소 버튼을 누르면 종료
+         while(true){
+            let num=prompt("숫자를 입력하세요.");
+           
+            //취소 누르면 종료
+            if(num==null){
+                alert("종료합니다.")
+                break;
+            }
+            
+            //유효성검사
+            num=Number(num);
+            //if(num==NaN){
+            if(isNaN(num)){
+            alert("잘못된 숫자입니다.");     
+            }
+
+            //홀짝판별
+            if(num%2==0){
+                alert("짝수입니다.");
+            }else if(num%2==1){
+                alert("홀수입니다.");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
