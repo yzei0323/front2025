@@ -7,20 +7,72 @@
 </head>
 <body>
 
+    <h2>
+        별 하나를 이용하여 다음과 같이 출력하시오<br>
+        *<br>
+        **<br>
+        ***<br>
+        ****<br>
+        *****<br>
+    </h2>
+    
 
     <script>
 
-        /*
+        //잘 모르겠어용용 그래서 반복으로 안하고 걍 출력해볼게용용
 
-        // 별 하나를 이용하여 다음과 같이 출력하시오
+        document.write("* <br>");
+        document.write("** <br>");
+        document.write("*** <br>");
+        document.write("**** <br>");
+        document.write("***** <br>");
+        document.write("<br><br>");
 
-        *
-        **
-        ***
-        ****
-        *****
 
-        */
+
+        //이번에는 반복으로 해볼까여 한줄씩 하자고;;;;;;;;;;;;;;;;;;;;
+
+        //1개
+        for(let i=1; i<=1; i++){
+            document.write("*");
+        }document.write("<br>")
+
+        //2개
+        for(let i=1; i<=2; i++){
+            document.write("*");
+        }document.write("<br>")
+        
+        //3개
+        for(let i=1; i<=3; i++){
+            document.write("*");
+        }document.write("<br>")
+
+        //4개
+        for(let i=1; i<=4; i++){
+            document.write("*");
+        }document.write("<br>")
+
+        //5개
+        for(let i=1; i<=5; i++){
+            document.write("*");
+        }document.write("<br>")
+
+        document.write("<br>")
+
+
+
+
+        //근데 이걸 이제 하나로 해야된다~ ㅇㅋ 알겠뜹니다
+
+        for(let j=1; j<=5; j++){            //j=1 i=1 * i=>2 <br> 끝
+            for(let i=1; i<=j; i++){        //j=2 i=1 * i=>2 * <br> 끝
+                document.write("*");        //헐랭 대박~~~
+            }
+            document.write("<br>");         //아닌줄 알았는데 맞잔앙~~~~~~ 그 뭐야 오타가 있었짠아~~~~~~~
+        }
+
+
+
     </script>
 
 </body>

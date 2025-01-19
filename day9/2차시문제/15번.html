@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h2>15. 9번 문제를 음수가 입력될 때까지 반복하기</h2>
+  <p> 9번 문제: 수를 입력 받아 제곱을 구하기</p>
+
+  <script>
+
+    /*
+
+    //9번 문제
+    let num=Number(prompt("숫자를 입력하세요."));
+    alert(`${num} 의 제곱은 ${num**2} 입니다.`);
+    
+    */
+
+    let num=Number(prompt("숫자를 입력하세요."));
+
+    while(true){
+      if(num>0){
+        alert(`${num} 의 제곱은 ${num**2} 입니다.`);
+      }else if(num<=0){
+        alert("종료합니다.")
+        break;
+      }else{
+        num=Number(prompt("숫자를 입력하세요. 0 또는 음수를 입력하면 종료됩니다."));
+      }
+      num=Number(prompt("숫자를 입력하세요. 0 또는 음수를 입력하면 종료됩니다."));
+    }
+
+
+  </script>
+
+</body>
+</html>
