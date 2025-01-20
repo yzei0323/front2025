@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>3. 구구단을 출력하는 함수 만들기</h2>
+    <p> 단 -> 해당 단을 출력하기 </p>
+
+    <script>
+        function 구구단(단){
+            for(let i=1; i<=9; i++){
+                document.write(`${단} * ${i} = ${단*i}<br>`)
+            }
+            return 단;
+        }
+
+        let 단=parseInt(prompt("구구단 몇 단을 출력할까요?"));
+
+        구구단(단);
+      
+
+    </script>
+</body>
+</html>

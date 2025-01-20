@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>2. 성인판단하는 함수 만들기</h2>
+    <p> 나이 -> 20세 이상이면 true, false 반환 </p>
+
+    <script>
+
+        function 성인판단(age){
+            if(age>=20){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        let age = parseInt(prompt("나이를 입력하세요."));
+        let result = 성인판단(age);
+        alert(result);
+
+    </script>
+
+
+</body>
+</html>

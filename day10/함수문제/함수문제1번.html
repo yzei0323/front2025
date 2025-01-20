@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>1. 홀수인지 판단하는 함수 만들기</h2>
+    <p> 수 -> 홀수이면 true, false 반환 </p>
+
+    <script>
+        
+        function 홀수판별(num){
+            if(num%2==1){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        let 입력 = parseInt(prompt("숫자를 입력하세요."));
+        let result = 홀수판별(입력);
+
+        alert(result);
+
+        
+    </script>
+</body>
+</html>
