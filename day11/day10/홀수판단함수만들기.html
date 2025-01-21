@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+
+     // 수  =>홀수인지 판단하는 프로그램 작성하시오
+     // 함수로 만드세요 
+
+
+     let su=7;
+     //let su  = parseInt( prompt());
+     if( su % 2 ==1){
+        console.log( "홀수입니다");
+     }else{
+        console.log( "짝수입니다");
+     }
+
+
+
+     //함수로 만들기 
+     //기능:  홀수판단   ( 홀수판단하기 )
+     //입력 (매개변수) :  숫자 
+     //반환 :  true(홀수이면 ), false  (홀수가 아니면 )
+
+
+     /*
+     function isOdd(  su ){  
+
+        if( su % 2 ==1){
+           // console.log( "홀수입니다");
+           return true;
+        }else{
+           //  console.log( "짝수입니다");
+           return false;
+        } 
+     } 
+
+     let result  =isOdd(4);
+     console.log( result );
+
+*/ 
+
+
+    function isOdd(  su ){  
+
+        let result ;
+        if( su % 2 ==1){    
+            result =true;
+        }else{     
+            result=false;
+        } 
+
+        return result;
+    } 
+
+
+    let result2= isOdd(5);
+    console.log( result2);
+
+    </script>
+    
+</body>
+</html>

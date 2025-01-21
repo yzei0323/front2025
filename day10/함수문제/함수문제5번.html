@@ -10,6 +10,18 @@
     <h2>두 수를 입력받아서 합을 구하는 함수 만들기</h2>
     <p> 두 수 -> 합을 반환하기 </p>
 
+    <script>
+        function add(num1, num2){
+            let hap = num1 + num2
+            return hap;
+        }
+
+        let num1=Number(prompt("첫 번째 숫자를 입력하세요."));
+        let num2=Number(prompt("두 번째 숫자를 입력하세요."));
+        let result=add(num1, num2);
+        
+        alert(`두 수의 합은 ${result}`);
+    </script>
 
 </body>
 </html>
