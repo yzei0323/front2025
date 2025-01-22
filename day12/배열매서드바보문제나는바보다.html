@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 이름배열의 각 이름을 남자를 붙인 새로운 배열을 만드세요
+        const 이름=['영숙', '순자','영자','옥순','현숙'];
+        const 이름2=['영수', '영호','영식', '영철', '정수'];
+        let new이름=[]
+        
+        for(let i=0; i<이름.length; i++){
+            let 여자 = 이름[i];
+            let 남자 = 이름2[i];
+            new이름.push(여자+" "+남자);
+        }
+        console.log(이름);
+        console.log(이름2);
+        console.log(new이름);
+
+
+    </script>
+</body>
+</html>

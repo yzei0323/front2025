@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function jelly(f){
+            for(let i=1; i<=n; i++){
+                f();
+            }
+        }
+
+        function fav(){
+            console.log("하리보");
+        }
+
+        jelly(fav);
+
+        jelly(function(){
+            console.log("마이구미");
+        });
+
+        jelly( ()=>{
+            console.log("왕꿈틀이");
+        });
+
+    </script>
+
+
+</body>
+</html>

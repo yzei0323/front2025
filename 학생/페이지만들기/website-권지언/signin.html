@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            overflow-y: scroll;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .line {
+            width: 100%;
+            border: 2px solid #00CD3C
+        }
+
+        /* 상단 header */
+        header {
+            height: 100px;
+            background-color: white;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 130px;
+            height: 40px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .search {
+            width: 330px;
+            height: 50px;
+            border: 2px solid #00CD3C;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+        .search_bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search_bar input {
+            text-align: center;
+            width: 250px;
+            padding: 15px;
+            border: none
+        }
+
+
+        /* 회원가입입영역 */
+
+        .signup-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="username"],
+        .signup-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00CD3C;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .signup-container .login-btn {
+            background-color: #00CD3C;
+            margin-top: 10px;
+        }
+
+        .post-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .signup-container button:hover {
+            background-color: #49ff49;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="line"></div>
+
+    <header>
+        <div class="logo">
+            <a href="./main.html">
+                <img src="./Nelon.png">
+            </a>
+        </div>
+
+        <div class="search">
+            <div class="search_bar">
+                <input type="text" class="search_text" placeholder="검색창입니다">
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="signup-container">
+            <h2>회원가입</h2>
+            <input type="text" name="id" placeholder="아이디">
+            <input type="username" name="username" placeholder="이름">
+            <input type="email" name="email" placeholder="이메일">
+            <input type="password" name="password" placeholder="비밀번호">
+            <input type="password" name="confirm_password" placeholder="비밀번호 확인">
+            <a href="./main.html">
+                <button>회원가입</button>
+            </a>
+            <a href="./login.html">
+                <button>로그인</button>
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
