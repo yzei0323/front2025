@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        ul li{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+    <script>
+        function init(){
+           // alert("init");
+
+            //서버에 데이터 요청하기
+            let products = [
+                {
+                    url: "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMjZfMzcg/MDAxNzM1MTgxMTI5NjEz.iXEvXWsPbU1C3dMn4Tf8gX6r9QGgpzZ_QPFnauqAcmUg.riqQQ_dDfqEZmUd37Wq9eLs-ojXlQtptgsYOrYhkpD0g.JPEG/4.jpg?type=w800",
+                    title: "파우치",
+                    price: "2000"
+                }, 
+                {
+                    url: "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMjZfMjgg/MDAxNzM1MTgxMDI4OTk1.HhtDrSDLx7JLgCxcoqfJcyjEUmU5_3i_E8wpkk-pW7Eg.NxpXYcIKouimSpQUN4AClL0izN-VgFfW1SzfWhddUd4g.JPEG/6.jpg?type=w800",
+                    title: "별 키링",
+                    price: "1000"
+                },
+                 {
+                    url: "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMjZfMSAg/MDAxNzM1MTgxMDU2Nzg0.pgCMdjKTFJd_E7jv7zHKH28V1_b8QR3OwKgbEjCV4KUg.krSSPHK2e-ci81Bz1iseXHzGuH1m5XsvFkMeelhh5xEg.JPEG/23.jpg?type=w800",
+                    title: "거북이 키링",
+                    price: "1000"
+                 }
+            ];
+
+            console.log(products);
+
+            let product_list = document.querySelector(".product_list");
+
+            for(let i=0; i<products.length; i++){
+
+                let item = products[i];
+                console.log(item);
+
+                let li = document.createElement("li");
+                li.innerHTML = `<img src="${item.url}">
+                                <p>${item.title}</p>
+                                <p>${item.price}</p>`;
+
+
+                //부모에 추가하기
+                product_list.appendChild(li);
+
+
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+    
+    <ul class="product_list">
+        <!-- 자바스크립트로 상품목록 만들기 -->
+    </ul>
+</body>
+</html>
