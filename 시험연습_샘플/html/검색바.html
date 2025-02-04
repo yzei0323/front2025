@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(245,248,248);
+            position: relative;
+        }
+        /*로고영역*/
+        .title{
+            position: absolute;
+            left:10px;
+            top:20px;
+        }
+
+        /*검색바영역*/
+        .search{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .search input{
+            width: 150px;
+            border: none;
+            outline: none;
+        }
+        .search_img{
+            width: 50px;
+            height: 50px;
+            background-image: url("../images/검색.png");
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="../images/logo.png">
+        </div>
+        <div class="search">
+            <input type="text">
+            <button class="search_img"></button>
+        </div>
+    </header>
+</body>
+</html>
