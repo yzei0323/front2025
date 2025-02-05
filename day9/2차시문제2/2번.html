@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
 
@@ -23,6 +23,42 @@
 
 
 
+    //체중, 키 값이 0이거나 음수이면 종료
+    while(true){
+      let 체중 = parseInt(prompt("체중(kg)을 입력하세요."));
+      if(체중<=0){
+        alert("잘못된 입력입니다.");
+        break;
+      }
+      let 키 = parseInt(prompt("키(cm)를 입력하세요."))/100; //m로 계산해야해서 나눠줌 그리고 소수점으로 입력받으면 뒤에 없어지던데
+      if(키<=0){
+        alert("잘못된 입력입니다.");
+        break;
+      }
+      //console.log(체중,키)
+
+      let result = 체중/(키*키);
+
+      if(result<18.5){
+          alert("저체중");
+        }else if(18.5<=result<23){
+          alert("정상");
+        }else if(23<=result<25){
+          alert("과체중");
+        }else if(25<=result){
+          alert("비만");
+        }
+
+      };
+
+
+    
+    
+    
+
+   
+
+  
   </script>
 
 </body>

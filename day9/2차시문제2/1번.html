@@ -16,7 +16,29 @@
   </p>
 
   <script>
+    
+  
+    //let num = Math.random(); //0~1 사이의 실수 랜덤 생성
+    //let num = Math.floor(26.3) //소수점이하 숫자는 버리고 출력   -->> 그니까 두개를 합쳐야 랜덤 정수를 출력할 수 있음
 
+
+    //let num = Math.floor(Math.random() * 100);  //0~99까지의 정수 랜덤 생성
+    
+    let num = Math.floor(Math.random() * 100) + 1;   // 왜냐면 우리는? 1부터 100까지 생성해야됨
+    let cnt=0;
+    while(true){
+      let input = Number(prompt("숫자를 맞춰보세용"));
+      cnt += 1;
+      if(num > input){
+        alert("더 큰 숫자입니다.");
+      }else if(num < input){
+        alert("더 작은 숫자입니다.");
+      }else if(num==input){
+        alert(`정답입니다! 시도 횟수 : ${cnt}번`);
+        break;
+      }
+    };
+    
 
 
   </script>
