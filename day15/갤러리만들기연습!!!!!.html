@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery_wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            
+            position: relative;
+        }
+
+        .gallery{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+
+            background-image: url("https://pbs.twimg.com/media/GRNPZWAbUAAhSnp?format=png&name=240x240");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .preBtn{
+            width: 30px;
+            height: 300px;
+            /*border: 1px solid black;*/
+            text-align: center;
+            align-content: center;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .preBtn:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+        .nextBtn{
+            width: 30px;
+            height: 300px;
+            /*border: 1px solid black;*/
+            text-align: center;
+            align-content: center;
+
+            position: absolute;
+            top:50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .nextBtn:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <script>
+        let images=[
+            "https://pbs.twimg.com/media/GRNPZWAbUAAhSnp?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4iDnbYAArzUC?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH43I2bQAAcosM?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH43I3boAAXa-r?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH40LLaUAAoPTp?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH40LRaMAA7RlM?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4blcaUAAkD5J?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4bmIa4AANT7W?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4evbbcAE1o-f?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4evgaQAAsh19?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4evgaQAAsh19?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRLzOU3aEAA1z1I?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH46hzbUAAgfXO?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH46hzawAAebR4?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4pr8bYAENcfI?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4pr-a0AAA6CJ?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4ltIbcAAkVhJ?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4ltIb0AAhk7T?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH3_f4aMAEAIY1?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH3_f8a0AAC1wQ?format=png&name=240x240",
+            "https://pbs.twimg.com/media/GRH4iDkb0AAvewd?format=png&name=240x240"
+        ]
+
+        let index=0;
+        function prev(){
+            //alert("ssdsdf");
+            let gallery = document.querySelector(".gallery");
+
+            gallery.style.backgroundImage=`url(${images[index]})`;
+            gallery.style.backgroundPosition="center";
+            gallery.style.backgroundSize="cover";
+
+            index--;
+
+            if(index<0){
+                index = images.length-1; 
+            }
+
+        }
+
+        function next(){
+            //alert("dfsf");
+            let gallery = document.querySelector(".gallery");
+            
+            gallery.style.backgroundImage=`url(${images[index]})`;
+            gallery.style.backgroundPosition="center";
+            gallery.style.backgroundSize="cover";
+            
+            index++;
+            //여기까지하면~???? ㅇㅋ 잘 넘어감 근데? 사진 끝나면 빈화면이 나옴
+            //그러니까 인덱스를 언제까지 커지게 할지 정해줘야됨 ㅇㅋㅇㅋ
+
+            if(index>=images.length){
+                index = 0; 
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="gallery_wrap">
+        <!--갤러리영역??-->
+        <div class="gallery"></div>
+
+        <div class="preBtn" onclick="prev()"><</div>
+        <div class="nextBtn" onclick="next()">></div>
+    </div>
+</body>
+</html>

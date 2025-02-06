@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height:100px;
+            background-color: rgb(245,248,248);
+            position:relative;
+        }
+        .search{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+
+            border: 1px solid black;
+            display: flex;
+        }
+        .search input{
+            border: none;
+            padding: 5px;
+            width: 120px;
+        }
+        .btn{
+            padding: 0px;
+            border: none;
+            background-color: white;
+        }
+        .btn img{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search">
+            <input type="text">
+            <button class="btn"><img src="/시험연습2/images/검색.png"></button>
+        </div>
+    </header>
+</body>
+</html>

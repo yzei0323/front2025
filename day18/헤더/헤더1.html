@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 165px;
+            border-top: 5px solid #009223;
+            border-bottom: 1px solid black; /*이따 지워*/
+            display: flex;
+            position: relative;
+        }
+        .logo{
+            height: 40px;
+            position: absolute;
+            top: 35px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        
+        .log_menu{
+            position: absolute;
+            top: 40px;
+            right: 20%;
+            
+        }
+        .log_menu ul{
+            padding: 0px;
+            margin: 0px;
+            height: 30px;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        .log_menu li{
+            margin: 5px;
+            font-size: 13px;
+            color: #666;
+            font-weight: bold;
+        }
+        .log_menu li::marker {
+            color: #ddd;
+        }
+        .signup{
+            list-style: inside;
+        }
+
+        .main_nav{
+            width: 100%;
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        .main_nav ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .main_nav ul:hover{
+            cursor: pointer
+        }
+        .main_nav li{
+            float: left;
+            width: 165px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=https://www.subway.co.kr><img src="./images/logo_w.png"></a>
+        </div>
+        <div class="log_menu">
+            <ul>
+                <li>로그인<a href=""></a></li>
+                <li class="signup">회원가입<a href=""></a></li>
+                <li><a href="https://www.subway.com/en-us/"><img src="./images/icon_utill_global.png"></a></li>
+            </ul>
+        </div>
+        <nav class="main_nav">
+            <ul>
+                <li>메뉴소개</li>
+                <li>이용방법</li>
+                <li>새소식</li>
+                <li>써브웨이</li>
+                <li>가맹점</li>
+                <li>온라인 주문</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

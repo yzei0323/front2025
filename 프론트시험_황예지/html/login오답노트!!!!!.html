@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* header 스타일 */
+        header{
+            height: 100px;
+            background-color: rgb(245, 248, 248);
+            position: relative;
+        }
+
+        /*타이틀*/
+        .title{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        /*검색바*/
+        .search{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            
+            border: 0.5px solid #ddd;
+            width: 180px;
+            height: 30px;
+            display: flex;
+        }
+        
+        .search input{
+            outline: none;
+            border: none;
+            width: 150px;
+        }
+
+        .btn{
+            width: 30px;
+            height: 30px;
+            background-image: url("../images/검색.png");
+            background-position: center;
+            background-size: cover;
+            border: none;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+        }
+
+
+    /* nav 스타일*/
+        nav{
+            height: 40px;
+            padding: 20px;
+            background-color: rgb(232, 243, 243);
+            position: relative;
+        }
+
+        .menu{
+            position: absolute;
+            right: 50px;
+            margin-top: 10px;
+        
+        }
+        nav a{
+            text-decoration: none;
+            padding : 5px;
+            color: black;
+        }
+
+
+    /* section 스타일 */
+        section{
+            height: 600px;
+            margin-top: 50px;
+        }
+
+        .log_wrap{
+            width: 400px;
+            padding: 20px;
+            border: 0.5px solid rgb(243, 222, 222);
+            margin: 0 auto;
+            justify-items: center;
+        }
+
+        .log_img{
+            width: 300px;
+            height: 300px;
+            background-image: url("../images/login_logo.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .log_info{
+            padding: 10px;
+        }
+
+        .log_info input{
+            width: 100%; /*100%으로 하면 튀어나와서 94%로 변경했습니다 ㅋㅋ 아 보더박스하면 된다네요 아 ㅋㅋ 하...*/
+            padding: 10px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+
+        .log_info button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 3px;
+            background-color: silver;
+            border: none;
+            margin-top: 10px;
+        }
+        
+
+    /* footer 스타일 */
+        footer{
+            padding: 20px;
+            background-color: rgb(233, 239, 239);
+            display: flex;
+        }
+
+        .item{
+            width: 33%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function loginCheck(){
+            let frm = document.frm;
+            let id = frm.id;
+            let password = frm.password;
+            if(id.value==""){
+                alert("아이디를 입력하세요.");
+                id.focus();
+            }else if(password.value==""){
+                alert("비밀번호를 입력하세요.");
+                password.focus();
+            }else{
+                alert("로그인 성공!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!--타이틀-->
+        <div class="title">
+            <a href="../html/index.html"><img src="../images/logo.png"></a>
+        </div>
+        
+        <!--검색바-->
+        <div class="search">
+            <input type="text">
+            <button class="btn"></button>
+        </div>
+    </header>
+
+    <nav>
+        <!--메뉴영역-->
+        <div class="menu">
+            <a href="../html/login.html">로그인</a>
+            |
+            <a href="../html/index.html">홈으로</a>
+        </div>
+    </nav>
+
+    <section>
+        <form name="frm" method="post">
+            <div class=log_wrap>
+                <div class="log_img"></div>
+                <div class="log_info">
+                    <input type="text" placeholder="아이디" name="id">
+                    <input type="text" placeholder="비밀번호" name="password">
+                    <button type="button" onclick="loginCheck()">로그인</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="item"><img src="../images/footer_acorn.png"></div>
+        <div class="item">에이콘ACADEMY(홍대)</div>
+        <div class="item">COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED.</div>
+    </footer>
+
+</body>
+</html>
