@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
         *{
-            font-family: "Nanum Gothic", serif;
+            font-family: "Noto Sans KR", serif;
+            font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
         }
@@ -109,10 +110,8 @@
         .hidden_menu li{
             margin: 15px 0 15px 0;
             font-size: 15px;
-            font-weight: 500;
             color: #666;
-            font-weight: 500;
-            letter-spacing: -2px;
+            letter-spacing: -1px;
         }
         .hidden_menu li:hover{
             color:#009223;
@@ -122,7 +121,6 @@
             height: 230px; /* 마우스를 갖다 대면 높이 생기게 하기 */
             transition: 0.5s; /* 천천히 나오게 하는 효과*/
         }
-        /*header스타일끝*/
 
 
         /* sub header 스타일 */
@@ -133,7 +131,7 @@
             border-bottom: 0.5px solid #ddd;
             background-color: white;
             align-items: center;
-            justify-content: center;/*비트윈인가 어라운드인가 뭐더라*/
+            justify-content: center;
             display: flex;
             z-index:998;
 
@@ -161,8 +159,8 @@
             text-decoration: none;
             font-size: 16px;
             color: #999;
-            letter-spacing: -2px;
-            font-weight: bold;
+            letter-spacing: -1px;
+            font-weight: 500;
             margin: 0 20px;
         }
         .sub_header li{
@@ -199,7 +197,7 @@
             background-position: center;
             background-size: contain;
             background-color: white;
-            transform: translateX(230px);
+            transform: translateX(220px);
             border: none;
         }
         .top:hover{
@@ -208,18 +206,35 @@
 
         /* 본문 orderTip 스타일 */
         .orderTip_title{
-            margin: 0px 0px 30px 0px;
+            margin: 0px 0px 20px 0px;
             line-height: 200px; /*height랑 같은 값이어야 가운데 정렬*/
             height: 200px;
             font-size: 40px;
-            font-weight: bold;
+            font-weight: 500;
             text-align: center;
+            letter-spacing: -1px;
         }
         .orderTip_wrap{
             width: 100%;
             min-width: 1200px;
             text-align: center;
         }
+
+        /*이용방법탭 스타일*/
+        .orderTip_tap{
+            height: 300px;
+            height: 68px;
+            border: 1px solid black;
+            position: relative;
+            z-index: 2;
+        }
+        .orderTip_menu{
+            position: relative;
+            z-index: 1px;
+            top:-34px;
+        }
+        /*샌드위치 메뉴 스타일*/
+        
         .orderTip_img1{
             width: 100%;
             height: 520px;
@@ -267,20 +282,18 @@
         }
         .item_text h1{
             font-size: 54px;
-            font-weight: 900;
+            font-weight: 700;
             margin: 20px 0px;
-            letter-spacing: -1px;
+            letter-spacing: -2px;
             color: #292929;
-            text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.8);;
-            /*글자 너무 얇은것 같아서 그림자 넣엇슴*/
         }
         .item_text p{
             font-size: 16px;
-            font-weight: bold;
+            font-weight: 500;
             color: #292929;
             margin: 0px;
             line-height: 25px;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
         }
 
         .item_bg{
@@ -299,7 +312,7 @@
             margin:0px;
             padding: 30px 0px;
             font-size: 22px;
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .topping_tip ul{
@@ -471,13 +484,20 @@
             <li><a href="">신선한 재료 소개</a></li>
             <li><a href="">APP 이용방법</a></li>
         </ul>
-        <button class="top" onclick="scrollToTop()"></button>
+        <div class="top" onclick="scrollToTop()"></div>
         </div>
     </div>
 
 
+    <!-- 본문 -->
     <h2 class=orderTip_title>써브웨이 이용방법</h2>
     <div class="orderTip_wrap">
+        
+        <!--이용방법 탭-->
+        <div class="orderTip_tap">
+            <div class=""></div>
+            <div></div>
+        </div>
 
         <!--스테이크&치즈-->
         <div class="orderTip_menu">
@@ -498,7 +518,7 @@
             <!---->
             <div class="item_bg">
                 <div class="topping_tip">
-                    <h3>더 맛있게 즐기는 <span style="color:#ff8201; font-weight: 900;">TIP</span></h3>
+                    <h3>더 맛있게 즐기는 <span style="color:#ff8201; font-weight:900; letter-spacing:-1px;">TIP</span></h3>
                     <ul>
                         <li><img src="./image/img_cheese.jpg">
                             <h4><img src="./image/bul01.png">CHEESE</h4>
@@ -522,7 +542,7 @@
                 <div class="item_order">
                     <p class="txt"><span class="bold_text">다이어트</span>중이라면?</p>
                     <div class="item_text">
-                        <h1 style="color:white; text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);">로스트치킨</h1>
+                        <h1 style="color:white;">로스트치킨</h1>
                         <p style="color: white">퍽퍽한 닭가슴살은 이제 그만!<br>
                             로스트 치킨 샐러드는 가볍고 든든하게 즐길 수 있습니다.<br>
                             샌드위치와 샐러드로 맛있고 든든하게 즐기세요.
@@ -534,7 +554,7 @@
             <!---->
             <div class="item_bg">
                 <div class="topping_tip">
-                    <h3>더 맛있게 즐기는 <span style="color:#ff8201; font-weight: 900;">TIP</span></h3>
+                    <h3>더 맛있게 즐기는 <span style="color:#ff8201; font-weight:900; letter-spacing:-1px;">TIP</span></h3>
                     <ul>
                         <li><img src="./image/img_salad.jpg">
                             <h4><img src="./image/bul01.png">SALAD</h4>
@@ -553,7 +573,6 @@
             </div>
         </div>
 
-
         <!--써브웨이클럽-->
         <div class="orderTip_menu">
             <!--사진,텍스트영역-->
@@ -561,7 +580,7 @@
                 <div class="item_order">
                     <p class="txt"><span class="bold_text">건강</span>을 생각한다면?</p>
                     <div class="item_text">
-                        <h1 style="color:white; text-shadow: 2px 2px 2px rgba(255,255,255,0.3);">써브웨이 클럽</h1>
+                        <h1 style="color:white;">써브웨이 클럽</h1>
                         <p style="color: white">고기의 단백질과 야채의 비타민으로 영양UP!<br>
                             절임류 야채를 제외해서 더 담백하게, 올리브오일을 넣어 부담은 DOWN!<br>
                             써브웨이 클럽으로 건강한 하루를 보내세요.
@@ -573,7 +592,7 @@
             <!---->
             <div class="item_bg">
                 <div class="topping_tip">
-                    <h3 >더 맛있게 즐기는 <span style="color:#ff8201; font-weight: 900;">TIP</span></h3>
+                    <h3 >더 맛있게 즐기는 <span style="color:#ff8201; font-weight:900; letter-spacing:-1px;">TIP</span></h3>
                     <ul>
                         <li><img src="./image/img_sauce03.jpg">
                             <h4><img src="./image/bul01.png">SAUCE</h4>
